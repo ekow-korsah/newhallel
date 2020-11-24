@@ -1,0 +1,360 @@
+/* Navbar Section */
+
+nav {
+    background:  whitesmoke;
+    height: 70px;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: space-between;
+	padding: 0px 50px 0px 100px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    color: rgb(13,13,69);
+	z-index: 88888;
+	border-bottom: 0.5px solid #a5a5a5;
+}
+
+nav ul {
+    display: flex;
+    list-style-type: none;
+	position: sticky;
+}
+
+.brand {
+    color: #292c2f;
+    font-weight: 800;
+    font-size: 20px;
+}
+
+nav ul li {
+	margin: 0 5px;
+}
+
+nav ul li a {
+    color: #292c2f;
+    font-weight: 1000;
+    letter-spacing: 1px;
+    padding: 10px;
+    text-decoration: none;
+    letter-spacing: 1px;
+    font-size: 18px;
+    border-radius: 5px;
+}
+
+nav ul li a:hover {
+	color: black;
+	border-bottom: 4px solid #292c2f;
+	text-decoration: none;	
+    
+}
+
+nav .menu-btn i {
+    color: white;
+    cursor: pointer;
+    font-size: 22px;
+    display: none;
+}
+
+#click {
+    display: none;
+}
+
+.activeLink {
+    background: #dee3de;
+	color: black;
+	
+}
+
+/* Makes the Navbar sticky with Javascript */
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+
+  /* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
+.sticky + .content {
+	padding-top: 60px;
+  }
+
+/* Code below is for responsiveness, basically hard-coded with CSS for mobile devices */
+@media (max-width: 940px) {
+
+ 
+    nav .menu-btn i{
+        display: block;
+        text-align: center;
+    }
+      
+    nav ul {
+        position: fixed;
+        top: 1px;
+        left: -100%;
+        background: #292c2f;
+        height: 100vh;
+        width: 70%;
+        display: block;
+		transition: all 0.5s ease;
+    }
+
+	.activeLink {
+		background:none;
+		color:white;
+	}
+
+    #click:checked ~ ul {
+        left: 0%;
+    }
+
+    #click:checked ~ .menu-btn i::before {
+        content: "\f00d";
+    }
+
+    nav ul li {
+        margin: 30px 0;
+    }
+
+    nav ul li a {
+        font-size: 20px;
+        display: block;
+		background:#292c2f;
+		color: white
+        
+    }
+
+    nav ul li a:hover {
+        background: none;
+		color: pink;
+		 
+    }
+}
+
+/* The sticky class is added to the navbar with JS when it reaches its scroll position */
+.sticky {
+	position: fixed;
+	top: 0;
+	width: 100%;
+  }
+  
+  /* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
+  .sticky + .content {
+	padding-top: 60px;
+  }
+
+
+td,th {
+	font-family: monospace;
+	padding: 4px;
+	background-color: #ccc;
+}
+
+label {
+	vertical-align: top;
+}
+
+#main {
+	border: 1px dotted blue;
+	padding: 6px;
+	background-color: #ccc;
+	margin-right: 50%;
+}
+
+#items_table {
+	border: 1px dotted blue;
+	padding: 6px;
+	margin-top: 12px;
+	margin-right: 50%;
+}
+
+#items_table h3 {
+	font-size: 18px;
+	margin-top: 0px;
+	font-family: sans-serif;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+}
+.main {
+	max-height: 550px;;
+	background-color: #292c2f;
+	color: white;
+	font-size: 38pt;
+	text-align: center;
+	line-height: 550px;
+}
+footer{
+	/*position: fixed;*/
+	bottom: 0;
+}
+.body-section{
+	background-color: #292c2f;
+	box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+	box-sizing: border-box;
+	width: 100%;
+	text-align: left;
+	font: bold 16px sans-serif;
+ 
+	padding: 55px 50px;
+	margin-top: 80px;
+}
+ 
+.body-section .footer-left,
+.body-section .footer-center,
+.body-section .footer-right{
+	display: inline-block;
+	vertical-align: top;
+}
+ 
+.body-section .footer-left{
+	width: 40%;
+}
+ 
+.body-section h3{
+	color:  #ffffff;
+	font: normal 36px 'Cookie', cursive;
+	margin: 0;
+}
+ 
+.body-section h3 span{
+	color:  #5383d3;
+}
+
+
+.body-section .footer-links{
+	margin: 20px 0 12px;
+	padding: 0;
+	color:  #ffffff;
+}
+ 
+.body-section .footer-links a{
+	line-height: 1.8;
+	display:inline-block;
+	color:  inherit;
+	text-decoration: none;
+}
+ 
+.body-section .footer-company-name{
+	margin: 0;
+	color:  #8f9296;
+	font-weight: normal;
+	font-size: 14px;
+
+}
+ 
+ 
+.body-section .footer-center{
+	width: 35%;
+}
+ 
+.body-section .footer-center i{
+	color: #ffffff;
+	vertical-align: middle;
+	border-radius: 50%;
+	background-color:  #33383b;
+	font-size: 25px;
+	line-height: 42px;
+	width: 38px;
+	height: 38px;
+	text-align: center;
+	margin: 10px 15px;	
+}
+ 
+.body-section .footer-center i.fa-envelope{
+	font-size: 17px;
+	line-height: 38px;
+}
+ 
+.body-section .footer-center p{
+	margin: 0;
+	display: inline-block;
+	vertical-align: middle;
+	color: #ffffff;
+}
+ 
+.body-section .footer-center p span{	
+	font-size:14px;
+	line-height:2;
+	display: block;
+	font-weight: normal;
+}
+ 
+.body-section .footer-center p a{
+	color:  #5383d3;
+	text-decoration: none;;
+}
+ 
+.body-section .footer-right{
+	width: 20%;
+}
+ 
+.body-section .footer-company-about{
+	line-height: 20px;
+	font-weight: normal;
+	font-size: 13px;
+	margin: 0;
+	color:  #92999f;
+}
+ 
+.body-section .footer-company-about span{
+	font-weight: bold;
+	color:  #ffffff;
+	margin-bottom: 20px;
+	display: block;
+	font-size: 14px;
+}
+ 
+.body-section .footer-icons{
+	margin-top: 25px;
+}
+ 
+.body-section .footer-icons a{
+	font-size: 20px;
+	text-align: center;
+	color: #ffffff;
+	line-height: 35px;
+	display: inline-block;
+	width: 35px;
+	height: 35px;
+	margin-right: 3px;
+	margin-bottom: 5px;
+	cursor: pointer;
+	background-color:  #33383b;
+	border-radius: 2px;
+}
+ 
+ 
+@media (max-width: 880px) {
+ 
+	.body-section{
+		font: bold 14px sans-serif;
+	
+	}
+	.body-section .footer-left,
+	.body-section .footer-center,
+	.body-section .footer-right{
+		width: 100%;
+		display: block;
+		text-align: center;
+		margin-bottom: 40px;
+	}
+ 
+	.body-section .footer-center i{
+		margin-left: 0;
+	}
+	.body-section {
+		line-height: normal;
+		font-size: auto;
+	}
+ 
+}
+
+/* form validation */
+.container {
+	max-width: 960px;
+  }
+  
+  .lh-condensed { line-height: 1.25; }
+  
+  

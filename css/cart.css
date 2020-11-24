@@ -1,0 +1,108 @@
+body {
+	overflow-x: hidden; /*new*/
+}
+
+
+a:link{
+    text-decoration: none;
+}
+
+/*new*/
+.success-sms {
+	padding: 10px;
+	margin: auto;
+	margin-top: 10px;
+	text-align: center;
+	background-color: lightgreen;
+	max-width: 300px;
+}
+
+
+.button {
+    background-color: crimson;
+    border: 2px solid white;
+    text-decoration: none;
+    padding: 10px 28px;
+    color: white;
+    margin-top: 10px;
+    margin-bottom: 10px; /*new*/
+    display: inline-block;
+}
+.button:hover {
+    background-color: white;
+    color: crimson;
+    text-decoration: none;
+    border: 2px solid crimson;
+}
+
+.bg-modal {
+    background-color: rgba(0, 0, 0, 0.8);
+    width: 100%;
+    height: auto;
+    position: absolute;
+    top: 0;
+	right: 0;
+    display: none;
+    justify-content: left;
+    align-items: left;
+	animation: .5s slide-left; /*new*/
+}
+
+/*new*/
+@keyframes slide-left{
+	from{right: -300px;}
+	to{right: 0;}
+}
+
+
+.modal-contents {
+    /*height: 600px;*/
+    /*width: 500px; initial*/
+    width: 100%;
+    background-color: white;
+    text-align: left;
+    /*padding: 10px; initial*/
+    padding: 10px 15px;
+    position: left;
+    border-radius: 4px;
+	box-shadow: 0 0 5px 3px lightgray; /*new*/
+}
+
+input, textarea {
+    /*margin: 15px; initial*/
+	margin: 10px 0;
+    display: block;
+    width: 100%;
+    padding: 8px;
+    border: 1px solid gray;
+}
+
+/*new*/
+.order-btn {
+	margin-top: 20px;
+	/* border: ; */
+	background-color: #DC3545;
+	color: #fff;
+	font-weight: bolder;
+}
+
+.dropdown {
+    margin: 9px;
+    display: block;
+    width: 50%;
+    padding: 8px;
+    border: 1px solid gray;
+}
+
+.close {
+    position: absolute;
+    top: 0;
+    right: 10px;
+    font-size: 42px;
+    color: #333;
+    transform: rotate(45deg);
+    cursor: pointer;
+}
+.close:hover {
+    color: #666;
+}
