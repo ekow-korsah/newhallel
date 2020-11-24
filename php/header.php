@@ -1,8 +1,8 @@
 <nav class="navbar navbar-expand-lg navbar-light navbar-survival101">
   <div class="container-fluid">
-    <a class="navbar-brand" href="#">
-      <img src="./Screenshot 2020-11-05 at 3.56.52 PM.png" alt="L A N T E R N" width="180" height="110">
-    </a>
+    <a class="navbar-brand" href="./index.php">
+        <img src="./Screenshot 2020-11-05 at 3.56.52 PM.png" alt="L A N T E R N" width="180" height="110">
+      </a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor02" aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>

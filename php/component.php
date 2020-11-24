@@ -8,7 +8,7 @@ function component($productname, $productprice, $productimg, $productid){
         <div class="card" style="width: 18rem; border: none; padding-left:13%;">
             <img class="card-img-top" src=$productimg  alt="Card image cap" width="9000px" height="350px">
             <div class="card-body">
-            <h6 class="card-title" style="text-align:center">$productprice</h6>
+            <h6 class="card-title" style="text-align:center">GHC $productprice</h6>
             <h5 class="card-title" style="text-align:center">$productname</h5>
             <button id="btn$productid" type="submit" class="btn btn-warning my-3" name="add" onclick="addToCart('$productid', this.id)">Add to Cart <i class="fas fa-shopping-cart"></i></button>
             <input type='hidden' name='product_id' value='$productid'>

@@ -17,7 +17,7 @@
 
 <nav class="navbar navbar-expand-lg navbar-light navbar-survival101">
     <div class="container-fluid">
-      <a class="navbar-brand" href="#">
+      <a class="navbar-brand" href="./index.php">
         <img src="./Screenshot 2020-11-05 at 3.56.52 PM.png" alt="L A N T E R N" width="180" height="110">
       </a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor02" aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
@@ -54,7 +54,7 @@
         <div class="words">
             <h1>Get your designer<br>stickers, <span style="color: #d59dba;">notebooks</span> <br>& more!</h1>
             <p>For prices as low as <span style="color: #d59dba ;">GHs 10</span></p>
-            <button class="bt">SHOP NOW</button>
+            <a href="./newshop.php"><button class="bt">SHOP NOW</button></a>
         </div>
         <div class="image">
             <img src="./Hallel-29.jpg" alt="" >
@@ -66,22 +66,22 @@
     <div class="cards" style="display: flex; flex-wrap: wrap; margin-left: 10%; margin-top: 2%;">
       <div class="first" style="text-align:center; padding-left: 2%; padding-bottom: 2%;">
         <img src="./Hallel-33.png" alt="" width="250px" height="370px"> 
-        <div class="title">Tsuki Pop-up Pencil Case ☾</div>
+        <div class="title">Yahweh</div>
         <a href="newshop.php">view in shop</a>
       </div>
       <div class="first ss" style="text-align:center; padding-left: 2%;   padding-bottom: 2%;">
         <img src="./Hallel-16.png" alt="" width="250px" height="370px"> 
-        <div class="title">Tsuki Pop-up Pencil Case ☾</div>
+        <div class="title">Daughter of the KING</div>
         <a href="newshop.php">view in shop</a>
       </div>
       <div class="first" style="text-align:center; padding-left: 2%; padding-bottom: 2%;">
         <img src="Hallel-43.png" alt="" width="250px" height="370px" > 
-        <div class="title">Tsuki Pop-up Pencil Case ☾</div>
+        <div class="title">Mighty Man of Valour</div>
         <a href="newshop.php">view in shop</a>
       </div>
       <div class="first" style="text-align:center; padding-left: 2%; padding-bottom: 2%;">
         <img src="Hallel-37.png" alt="" width="250px" height="370px"> 
-        <div class="title">Tsuki Pop-up Pencil Case ☾</div>
+        <div class="title">Daughter of the KING</div>
         <a href="newshop.php">view in shop</a>
       </div>
       <!-- <div class="first ss" style="text-align:center; padding-left: 2%; padding-bottom: 2%;">
@@ -113,7 +113,7 @@
               </div> 
               <div class="col-md-6"> 
                   <div class="panel">
-                      <h1>Our Story</h1>
+                      <h1>What is Hallel</h1>
                       <p class="pt-4">
                           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
                       </p>

@@ -59,7 +59,7 @@ if (isset($_POST['add'])){
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Akua's Mart: Shopping Cart</title>
+    <title>Hallel: Shopping Cart</title>
 
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.css" />
@@ -107,13 +107,32 @@ if (isset($_POST['add'])){
         footer .column i + i{
         padding: 0 0.5em;
     }
+
+    
+
+        @media only screen and (max-width: 912px){
+            .hiddentext{
+           visibility: visible !important;
+           flex-wrap:wrap
+        }
+        .first{
+            margin-left: 10%;
+            margin-top: 2%;
+        }
+
+        }
     </style>
 
 </head>
 <body>
 
 
+
 <?php require_once(ROOTH_PATH . "/php/header.php"); ?>
+
+
+<div class="hiddentext" style="text-align:center; visibility:hidden;" >Click on dropdown icon to reveal cart after adding</div>
+
 
 <section class=" content-section first"  id="mess" >
         <div class="row text-center">
